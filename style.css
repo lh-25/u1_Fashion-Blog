@@ -1,0 +1,91 @@
+html{
+    border-left: 5px solid lightgray;
+}
+
+header,main,footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+h1 {
+    color: tomato;
+    font-weight: lighter;
+}
+h2 {
+    font-weight: lighter;
+}
+body { 
+    min-height: 100%;
+    font-family: sans-serif;
+    max-width: 1000px;
+    margin: auto;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+img {
+    width: 100%;
+}
+
+.nav-header ul, .nav-footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+}
+/* https://www.w3schools.com/cssref/sel_last-child.php 
+    i was confused at first on how to make the vertical lines inbetween the ul li in the footer but i decided to use a border to get the them. i used padding 0 so that there wasnt any on the top and bottom and added 10px so that i could space them out and i made the color light gray. i found this article on first and last child -which seemed to have a similar syntax as the first letter element- in order to get rid of the border on the right of the last element in the list*/
+.nav-header ul li a {
+    font-size: 20px;
+    color: lightgray
+}
+.nav-footer ul li  {
+    border-right: 2px solid lightgray;
+    border-color: lightgray;
+    padding: 0 10px;
+    
+}
+.nav-footer ul li:last-child {
+    border-right: none;
+}
+.nav-footer ul li a {
+    color: tomato;  
+    text-decoration: none;
+    font-size: 14.3px;
+}
+
+article {
+    margin-bottom: 4rem;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 2rem;
+}
+.date {
+    color: lightgray;
+}
+article h2 {
+    font-weight: lighter;
+    font-size: xx-large;
+    margin: 10px;
+}
+article p::first-letter {
+    font-size: 5rem;
+    color: lightgray;
+    border-radius: 2px;
+    margin-right: 6px;
+    float:left;
+    font-weight: lighter;
+}
+footer {
+    color: lightgray;
+}
+.continue a {
+    color: tomato;
+    font-weight:600;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/*the only issue i have was i couldn't get my navs to be inline with the rest of the webpage, for some reason they are indented */
+
